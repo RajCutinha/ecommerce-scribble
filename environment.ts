@@ -6,7 +6,8 @@ export const envSchema = z.object({
     GOOGLE_CLIENT_SECRET: z.string(),
     GITHUB_CLIENT_ID: z.string(),
     GITHUB_CLIENT_SECRET: z.string(),
-    AUTH_SECRET: z.string()
+    AUTH_SECRET: z.string(),
+    RESEND_API_KEY: z.string()
 });
 
 envSchema.parse(process.env);
